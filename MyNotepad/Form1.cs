@@ -20,8 +20,7 @@ namespace MyNotepad
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Can't just open a new form because that document would close when this one does.
-            var process_info = new System.Diagnostics.ProcessStartInfo(Application.ExecutablePath);
-            System.Diagnostics.Process.Start(process_info);
+            System.Diagnostics.Process.Start(Application.ExecutablePath);
         }
     }
 }
